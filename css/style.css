@@ -1,0 +1,124 @@
+
+        body {
+            background-color: #B2CEFE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+       
+        .titulo-aurora {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #0F172A; 
+            padding: 15px 30px;
+            background-color: rgba(255, 255, 255, 0.85); 
+            border-radius: 8px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .titulo-aurora::before {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border-radius: 12px;
+            padding: 4px; 
+            
+           
+            background: linear-gradient(
+                45deg, 
+                #00ff87, /* Verde Neon */
+                #60efff, /* Ciano */
+                #0061ff, /* Azul */
+                #7a00ff, /* Roxo */
+                #00ff87  /* Fecha com verde para o loop ficar suave */
+            );
+            
+            background-size: 400% 400%;
+            z-index: -1;
+            
+         
+            animation: movimentoAurora 8s ease infinite;
+        }
+
+        
+        .titulo-aurora::after {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border-radius: 12px;
+            background: linear-gradient(45deg, #00ff87, #60efff, #0061ff, #00ff87);
+            background-size: 400% 400%;
+            z-index: -2;
+            filter: blur(15px); 
+            opacity: 0.6;
+            animation: movimentoAurora 8s ease infinite;
+        }
+
+       
+
+
+        h1{
+        color: #7a00ff;
+        text-align: center;
+        margin-top: -300px;
+        font-size: 50px;
+        margin-left: -80px;
+                }
+
+
+        h2{
+        color: #001a8b;
+        text-align: center;
+        margin-top: 0px;
+        font-size: 25px;
+        margin-left: -80px;
+                }
+
+
+    #container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+     margin-left: -40px;    
+}
+               
+
+input {
+    padding: 12px;
+    width: 90%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #7a00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b94e76;
+}
+
+#resultado {
+    margin-top: 20px;
+    text-align: left;
+}
